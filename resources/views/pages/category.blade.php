@@ -97,7 +97,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/" rel="bookmark"><?php echo limit_words($feed->articles[2]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -121,7 +121,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/" rel="bookmark"><?php echo limit_words($feed->articles[3]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -147,7 +147,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/" rel="bookmark"><?php echo limit_words($feed->articles[4]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -171,7 +171,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/" rel="bookmark"><?php echo limit_words($feed->articles[5]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -197,7 +197,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_04-1-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[4]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/" rel="bookmark"><?php echo limit_words($feed->articles[6]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -221,7 +221,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/02_events_article_06-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[5]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/" rel="bookmark"><?php echo limit_words($feed->articles[7]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -251,7 +251,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/03_editorial_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[6]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/" rel="bookmark"><?php echo limit_words($feed->articles[8]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -275,7 +275,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/" rel="bookmark">
-                                            <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/03_editorial_article_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[7]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/" rel="bookmark"><?php echo limit_words($feed->articles[9]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">

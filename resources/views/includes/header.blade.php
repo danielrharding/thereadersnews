@@ -98,7 +98,7 @@
                                 <a href="https://colorlib.com/newspaper-x">Home</a>
                             </li>
                             <li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">
-                                <a href="<?php echo route('category.show', [ 'country' => 'uk' ]) ?>">UK</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'uk' ]) ?>">UK</a>
                                 {{--https://newsapi.org/v2/top-headlines?country=gb&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             <li id="menu-item-129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">

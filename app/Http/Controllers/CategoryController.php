@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        dd('In');
+        //
     }
 
     /**
@@ -46,7 +46,6 @@ class CategoryController extends Controller
      */
     public function show($name = null, $country = null)
     {
-        die('In');
         $feed = new ArticleService();
 
         return view('pages.category', [
