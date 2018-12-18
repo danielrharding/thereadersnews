@@ -11,21 +11,6 @@
 |
 */
 
-Route::get('/', ['as' => 'home.index', 'uses' => 'HomeController@index']);
-
-Route::get('about', function()
-{
-    return View::make('pages.about');
+Route::get('/', function () {
+    return view('welcome');
 });
-Route::get('projects', function()
-{
-    return View::make('pages.projects');
-});
-Route::get('contact', function()
-{
-    return View::make('pages.contact');
-});
-Route::get('article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
-
-Route::get('category/{name}', ['as' => 'category.index', 'uses' => 'CategoryController@index']);
-
