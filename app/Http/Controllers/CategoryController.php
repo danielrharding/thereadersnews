@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\ArticleService;
 
 class CategoryController extends Controller
 {
@@ -13,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('pages.category', []);
+        //
     }
 
     /**
@@ -43,9 +44,14 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($name = null, $country = null)
     {
-        //
+        $feed = new ArticleService();
+
+        return view('pages.category', [
+            'name' => $name,
+            'feed' => $feed->getAllFeed($name, $country),
+        ]);
     }
 
     /**

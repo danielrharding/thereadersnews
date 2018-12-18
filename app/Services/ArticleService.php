@@ -12,6 +12,22 @@ use Illuminate\Http\Request;
 
 class ArticleService
 {
+    public function getAllFeed($name, $country = null)
+    {
+        $url = "https://newsapi.org/v2/top-headlines?country=$country&apiKey=8a78294929be47c4a66b84f4e99ad74c";
+
+        if($country !== null) {
+            $url = "https://newsapi.org/v2/everything?q=$name&apiKey=8a78294929be47c4a66b84f4e99ad74c";
+        }
+
+        $ch = curl_init( $url );
+        curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+        $result = curl_exec($ch);
+        curl_close($ch);
+        return json_decode($result);
+    }
+
     public function getTopUkHeadlinesFeed()
     {
         $ch = curl_init( "https://newsapi.org/v2/top-headlines?country=gb&apiKey=8a78294929be47c4a66b84f4e99ad74c" );

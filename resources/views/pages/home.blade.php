@@ -32,7 +32,7 @@
                                     <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[0]->title, 5) ?></a>
                                 </h1>
                                 <span class="newspaper-x-category">
-                                    <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                    <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
                                 <span class="newspaper-x-date"><?php echo article_date($feed->articles[0]->publishedAt); ?></span>
                             </div>
@@ -43,7 +43,7 @@
                                     <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[1]->title, 8) ?></a>
                                 </h6>
                                 <span class="newspaper-x-category">
-                                    <a href="https://colorlib.com/newspaper-x/category/editorial/">Top Headline</a>
+                                    <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
                                 <span class="newspaper-x-date"><?php echo article_date($feed->articles[1]->publishedAt); ?></span>
                             </div>
@@ -54,7 +54,7 @@
                                     <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[2]->title, 8) ?></a>
                                 </h6>
                                 <span class="newspaper-x-category">
-                                    <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                    <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
                                 <span class="newspaper-x-date"><?php echo article_date($feed->articles[2]->publishedAt); ?></span>
                             </div>
@@ -78,7 +78,7 @@
                                                         <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[3]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                                        <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
                                                     <span class="newspaper-x-date"><?php echo article_date($feed->articles[3]->publishedAt); ?></span>
                                                 </div>
@@ -89,7 +89,7 @@
                                                         <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[4]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                                        <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
                                                     <span class="newspaper-x-date"><?php echo article_date($feed->articles[4]->publishedAt); ?></span>
                                                 </div>
@@ -100,7 +100,7 @@
                                                         <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[5]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                                        <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
                                                     <span class="newspaper-x-date"><?php echo article_date($feed->articles[5]->publishedAt); ?></span>
                                                 </div>
@@ -111,7 +111,7 @@
                                                         <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[6]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Top Headline</a>
+                                                        <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
                                                     <span class="newspaper-x-date"><?php echo article_date($feed->articles[6]->publishedAt); ?></span>
                                                 </div>
