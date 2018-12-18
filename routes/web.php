@@ -27,5 +27,5 @@ Route::get('contact', function()
 });
 Route::get('article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
 
-Route::get('category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show']);
+Route::get('category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@index']);
 
