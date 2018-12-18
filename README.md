@@ -1,2 +1,0 @@
-# thereadersnews
-The Readers News
