@@ -46,6 +46,7 @@ class CategoryController extends Controller
      */
     public function show($name = null, $country = null)
     {
+        die('In');
         $feed = new ArticleService();
 
         return view('pages.category', [
