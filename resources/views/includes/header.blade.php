@@ -95,18 +95,18 @@
                             aria-expanded="false"><span class="fa fa-bars"></span></button>
                     <div class="menu-primary-menu-container"><ul id="primary-menu" class="menu">
                             <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">
-                                <a href="{{ route('home.index') }}">Home</a>
+                                <a href="<?php echo route('home.index') ?>">Home</a>
                             </li>
                             <li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">
-                                <a href="{{ route('category.show', [ 'name' => 'uk' ]) }}">UK</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'uk' ]) ?>">UK</a>
                                 {{--https://newsapi.org/v2/top-headlines?country=gb&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             <li id="menu-item-129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">
-                                <a href="{{ route('category.show', [ 'name' => 'business' ]) }}">Business</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'business' ]) ?>">Business</a>
                                 {{--https://newsapi.org/v2/everything?q=business&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             <li id="menu-item-130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-127">
-                                <a href="{{ route('category.show', [ 'name' => 'crypto' ]) }}">Crypto</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'crypto' ]) ?>">Crypto</a>
                                 {{--https://newsapi.org/v2/everything?q=crypto&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             {{--Drop down--}}
@@ -132,15 +132,15 @@
                                 {{--</ul>--}}
                             {{--</li>--}}
                             <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140">
-                                <a href="{{ route('category.show', [ 'name' => 'money' ]) }}">Money</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'money' ]) ?>">Money</a>
                                 {{--https://newsapi.org/v2/everything?q=money&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140">
-                                <a href="{{ route('category.show', [ 'name' => 'life+style' ]) }}">Life & Style</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'life+style' ]) ?>">Life & Style</a>
                                 {{--https://newsapi.org/v2/everything?q=life-style&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                             <li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140">
-                                <a href="{{ route('category.show', [ 'name' => 'tech' ]) }}">Tech</a>
+                                <a href="<?php echo route('category.show', [ 'name' => 'tech' ]) ?>">Tech</a>
                                 {{--https://newsapi.org/v2/everything?q=tech&apiKey=8a78294929be47c4a66b84f4e99ad74c--}}
                             </li>
                         </ul>
