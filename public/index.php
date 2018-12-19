@@ -21,6 +21,8 @@
 
 require __DIR__.'/../bootstrap/autoload.php';
 
+require __DIR__.'/../vendor/paralleldots/autoload.php';
+
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -34,6 +36,8 @@ require __DIR__.'/../bootstrap/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
+set_api_key("mtfumWugJCWpq4LwRwFkCwi9q55vN0yrmoMQWI6BKHc");
 
 /*
 |--------------------------------------------------------------------------

@@ -27,5 +27,7 @@ Route::get('/contact', function()
 });
 Route::get('/article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
 
-Route::get('/category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show'])->where('name', '.*');
+Route::get('/category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show']);
+
+Route::get('/tag/{name}', ['as' => 'tag.show', 'uses' => 'TagController@show']);
 

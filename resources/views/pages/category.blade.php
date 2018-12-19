@@ -36,7 +36,7 @@
                             <header class="entry-header">
                                 <div class="newspaper-x-image">
                                     <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/" rel="bookmark">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                        <img width="550" height="360" src="<?php echo $feed->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
                                 <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/" rel="bookmark"><?php echo limit_words($feed->articles[0]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
@@ -60,7 +60,7 @@
                             <header class="entry-header">
                                 <div class="newspaper-x-image">
                                     <a href="https://colorlib.com/newspaper-x/2017/05/10/nunc-hendrerit-egestas-amus-ad-arcu-im-usa/" rel="bookmark">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                        <img width="550" height="360" src="<?php echo $feed->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
                                 <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nunc-hendrerit-egestas-amus-ad-arcu-im-usa/" rel="bookmark"><?php echo limit_words($feed->articles[1]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
@@ -97,7 +97,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/" rel="bookmark">
-                                            <img width="550" height="360" src="<?php echo $feed->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/" rel="bookmark"><?php echo limit_words($feed->articles[2]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -121,7 +121,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/" rel="bookmark">
-                                            <img width="550" height="360" src="<?php echo $feed->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/" rel="bookmark"><?php echo limit_words($feed->articles[3]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -147,7 +147,7 @@
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
                                         <a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/" rel="bookmark">
-                                            <img width="550" height="360" src="<?php echo $feed->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
+                                            <img width="550" height="360" src="<?php echo $feed->articles[4]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
                                     <h4 class="entry-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/" rel="bookmark"><?php echo limit_words($feed->articles[4]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
@@ -310,15 +310,15 @@
                 <div class="newspaper-x-blog-sidebar">
                     <div id="tag_cloud-2" class="widget widget_tag_cloud">
                         <h3>Tags</h3>
-                        <div class="tagcloud"><a href="https://colorlib.com/newspaper-x/tag/business/" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/coast/" class="tag-cloud-link tag-link-16 tag-link-position-2" style="font-size: 8pt;" aria-label="coast (2 items)">coast</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/information/" class="tag-cloud-link tag-link-8 tag-link-position-3" style="font-size: 8pt;" aria-label="information (2 items)">information</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/life/" class="tag-cloud-link tag-link-14 tag-link-position-4" style="font-size: 8pt;" aria-label="life (2 items)">life</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/man/" class="tag-cloud-link tag-link-11 tag-link-position-5" style="font-size: 8pt;" aria-label="man (2 items)">man</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/money/" class="tag-cloud-link tag-link-10 tag-link-position-6" style="font-size: 8pt;" aria-label="money (2 items)">money</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/news/" class="tag-cloud-link tag-link-9 tag-link-position-7" style="font-size: 8pt;" aria-label="news (2 items)">news</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/politics/" class="tag-cloud-link tag-link-15 tag-link-position-8" style="font-size: 8pt;" aria-label="politics (2 items)">politics</a>
-                            <a href="https://colorlib.com/newspaper-x/tag/sport/" class="tag-cloud-link tag-link-12 tag-link-position-9" style="font-size: 8pt;" aria-label="sport (2 items)">sport</a>
+                        <div class="tagcloud">
+                            <?php
+                                $tags = keywords($feed->articles[0]->content . '' . $feed->articles[1]->content . '' . $feed->articles[2]->content . '' . $feed->articles[3]->content . '' . $feed->articles[4]->content . '' . $feed->articles[5]->content . '' . $feed->articles[6]->content . '' . $feed->articles[7]->content . '' . $feed->articles[8]->content . '' . $feed->articles[9]->content);
+                                $tags = json_decode($tags);
+
+                            ?>
+                            <?php foreach($tags->keywords as $tag) {  ?>
+                                <a href="{{ route('tag.show', [ 'name' => strtolower(urlencode($tag->keyword)) ]) }}" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 8pt;" aria-label="business (2 items)">{{ strtolower($tag->keyword) }}</a>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

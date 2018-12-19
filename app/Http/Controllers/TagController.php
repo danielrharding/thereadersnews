@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Services\ArticleService;
 
-class CategoryController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -48,8 +48,10 @@ class CategoryController extends Controller
     {
         $feed = new ArticleService();
 
-        return view('pages.category', [
-            'name' => str_replace("+"," ", $name),
+        dd($feed->getAllFeed($name));
+
+        return view('pages.tag', [
+            'name' => $name,
             'feed' => $feed->getAllFeed($name),
         ]);
     }
