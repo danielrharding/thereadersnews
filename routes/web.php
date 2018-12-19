@@ -25,7 +25,7 @@ Route::get('/contact', function()
 {
     return View::make('pages.contact');
 });
-Route::get('/article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
+Route::get('/article/{id}/{title}', ['as' => 'article.show', 'uses' => 'ArticleController@show']);
 
 Route::get('/category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show']);
 

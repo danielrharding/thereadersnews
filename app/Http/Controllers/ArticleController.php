@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ArticleModel;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -13,7 +14,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('pages.article', []);
+        //
     }
 
     /**
@@ -43,9 +44,13 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id, $title)
     {
-        //
+        $articleModel = ArticleModel::find($id);
+
+        return view('pages.article', [
+            'article' => $articleModel,
+        ]);
     }
 
     /**

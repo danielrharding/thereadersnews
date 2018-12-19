@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ArticleModel;
 use Illuminate\Http\Request;
 use App\Services\ArticleService;
 
@@ -46,11 +47,11 @@ class CategoryController extends Controller
      */
     public function show($name = null)
     {
-        $feed = new ArticleService();
+        $articleModel = ArticleModel::where('category', '=', $name)->get();
 
         return view('pages.category', [
             'name' => str_replace("+","", $name),
-            'feed' => $feed->getAllFeed($name),
+            'feed' => $articleModel,
         ]);
     }
 
