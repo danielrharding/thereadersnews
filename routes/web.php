@@ -17,15 +17,15 @@ Route::get('about', function()
 {
     return View::make('pages.about');
 });
-Route::get('projects', function()
+Route::get('/projects', function()
 {
     return View::make('pages.projects');
 });
-Route::get('contact', function()
+Route::get('/contact', function()
 {
     return View::make('pages.contact');
 });
-Route::get('article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
+Route::get('/article/{id}/{name}', ['as' => 'article.index', 'uses' => 'ArticleController@index']);
 
-Route::get('category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show'])->where('name', '.*');
+Route::get('/category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show'])->where('name', '.*');
 
