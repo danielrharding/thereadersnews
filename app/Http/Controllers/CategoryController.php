@@ -49,7 +49,7 @@ class CategoryController extends Controller
         $feed = new ArticleService();
 
         return view('pages.category', [
-            'name' => str_replace("+"," ", $name),
+            'name' => str_replace("+","", $name),
             'feed' => $feed->getAllFeed($name),
         ]);
     }

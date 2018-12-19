@@ -47,9 +47,7 @@ class TagController extends Controller
     public function show($name = null)
     {
         $feed = new ArticleService();
-
-        dd($feed->getAllFeed($name));
-
+        
         return view('pages.tag', [
             'name' => $name,
             'feed' => $feed->getAllFeed($name),
