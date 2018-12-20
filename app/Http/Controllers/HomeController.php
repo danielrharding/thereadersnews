@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Services\ArticleService;
 use Illuminate\Http\Request;
-use App\Models\ArticleModel;
 
 class HomeController extends Controller
 {
@@ -18,11 +17,11 @@ class HomeController extends Controller
         $feed = new ArticleService();
 
         return view('pages.home', [
-            'feed' => ArticleModel::where('category', '=', 'uk')->orderByDesc('id')->get(),
-            'editorial' => ArticleModel::where('category', '=', 'editorial')->orderByDesc('id')->get(),
-            'event' => ArticleModel::where('category', '=', 'event')->orderByDesc('id')->get(),
-            'latest' => ArticleModel::where('category', '=', 'latest')->orderByDesc('id')->get(),
-            'world' => ArticleModel::where('category', '=', 'world')->orderByDesc('id')->get(),
+            'feed' => $feed->getTopUkHeadlinesFeed(),
+            'editorial' => $feed->getEditorialFeed(),
+            'event' => $feed->getEventsFeed(),
+            'latest' => $feed->getLatestNewsFeed(),
+            'world' => $feed->getWorldNewsFeed(),
         ]);
     }
 
