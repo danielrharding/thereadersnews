@@ -57,6 +57,7 @@
                                     <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
                                 <span class="newspaper-x-date"><?php echo article_date($feed->articles[2]->publishedAt); ?></span>
+                                
                             </div>
                         </li>
                     </ul>
