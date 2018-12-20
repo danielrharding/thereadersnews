@@ -31,6 +31,8 @@ return [
     |
     */
 
+
+
     'connections' => [
 
         'sqlite' => [
@@ -73,7 +75,7 @@ return [
             'port' => env('DB_PORT', '1433'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'password' => env('DB_PASSWORD', 'secret'),
             'charset' => 'utf8',
             'prefix' => '',
         ],
