@@ -51,6 +51,8 @@ set_api_key("mtfumWugJCWpq4LwRwFkCwi9q55vN0yrmoMQWI6BKHc");
 |
 */
 
+
+
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(

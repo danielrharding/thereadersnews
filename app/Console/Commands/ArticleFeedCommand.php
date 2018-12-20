@@ -9,7 +9,7 @@ use App\Models\ArticleModel;
 class ArticleFeedCommand extends Command
 {
     public $categories = [
-        'uk', 'business', 'crypto', 'money', 'life+style', 'tech'
+        'uk', 'gb', 'business', 'crypto', 'money', 'life+style', 'tech'
     ];
     /**
      * The name and signature of the console command.

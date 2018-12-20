@@ -61,7 +61,9 @@
     <style id='newspaper-x-stylesheet-inline-css' type='text/css'>
 
         .newspaper-x-header-widget-area{
-            background: #0e0e11;
+            background-color: rgba(24,23,22,.75);
+            background-image: url(https://i.forbesimg.com/assets/images/subtle-dots.png);
+            height: 100%;
         }
     </style>
     <link rel='stylesheet' id='owl.carousel-css'  href='https://colorlib.com/newspaper-x/wp-content/themes/newspaper-x/assets/vendors/owl-carousel/owl.carousel.min.css?ver=5.0.1' type='text/css' media='all' />
