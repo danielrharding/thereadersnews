@@ -13,7 +13,7 @@
                         <h3 class="widget-title">Recent posts</h3>
                         <ul>
                             <li>
-                                <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/">{{ $feed[0]->title }}</a>
+                                <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/">Sed purus velit, finibus non semper  nonut am utas</a>
                                 <span class="post-date">May 10, 2017</span>
                             </li>
                             <li>
