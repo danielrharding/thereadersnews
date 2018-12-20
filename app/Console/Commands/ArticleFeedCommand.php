@@ -69,7 +69,7 @@ class ArticleFeedCommand extends Command
                 }
 
                 $articleModel->title = $article->title;
-                $articleModel->category = $category;
+                $articleModel->category = ( isset($category) ) ? $category : "";
                 $articleModel->content = $article->content;
                 $articleModel->author = ( $article->author ) ? $article->author : '';
                 $articleModel->url = $article->url;
