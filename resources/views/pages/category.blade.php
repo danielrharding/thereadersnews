@@ -35,12 +35,12 @@
                         <article id="post-108" class="post-108 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                             <header class="entry-header">
                                 <div class="newspaper-x-image">
-                                    <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[0]->title))))) ]) }}" rel="bookmark">
+                                    <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark">
                                         <img width="550" height="360" src="<?php echo $feed[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
-                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[0]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[0]->title, 5) ?></a></h4>
+                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[0]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
-                                    <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[0]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                 </div>
                                 <!-- .entry-meta -->
                             </header>
@@ -59,12 +59,12 @@
                         <article id="post-104" class="post-104 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial tag-business tag-coast tag-information tag-life tag-man tag-money tag-news tag-politics tag-sport">
                             <header class="entry-header">
                                 <div class="newspaper-x-image">
-                                    <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[1]->title))))) ]) }}" rel="bookmark">
+                                    <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark">
                                         <img width="550" height="360" src="<?php echo $feed[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
-                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[1]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[1]->title, 5) ?></a></h4>
+                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[1]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
-                                    <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[1]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                 </div>
                                 <!-- .entry-meta -->
                             </header>
@@ -96,12 +96,12 @@
                             <article id="post-101" class="post-101 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[2]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[2]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[2]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[2]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[2]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -120,12 +120,12 @@
                             <article id="post-98" class="post-98 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[3]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[3]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[3]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[3]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[3]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -146,12 +146,12 @@
                             <article id="post-95" class="post-95 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[4]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="{{ $feed[4]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[4]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[4]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[4]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[4]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -170,12 +170,12 @@
                             <article id="post-92" class="post-92 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[5]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[5]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[5]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[5]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[5]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[5]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -196,12 +196,12 @@
                             <article id="post-89" class="post-89 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[6]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[6]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[6]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[6]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[6]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[6]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -220,12 +220,12 @@
                             <article id="post-87" class="post-87 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[7]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[7]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[7]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[7]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[7]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[7]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -250,12 +250,12 @@
                             <article id="post-84" class="post-84 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[8]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[8]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[8]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[8]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[8]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[8]->title))))) ]) }}"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -274,10 +274,10 @@
                             <article id="post-81" class="post-81 post type-post status-publish format-standard has-post-thumbnail hentry category-editorial">
                                 <header class="entry-header">
                                     <div class="newspaper-x-image">
-                                        <a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[9]->title))))) ]) }}" rel="bookmark">
+                                        <a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[9]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[9]->title))))) ]) }}" rel="bookmark"><?php echo limit_words($feed[9]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[9]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
                                     </div>

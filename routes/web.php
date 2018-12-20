@@ -25,6 +25,10 @@ Route::get('/contact', function()
 {
     return View::make('pages.contact');
 });
+Route::get('privacy-policy', function()
+{
+    return View::make('pages.privacypolicy');
+});
 Route::get('/article/{id}/{title}', ['as' => 'article.show', 'uses' => 'ArticleController@show']);
 
 Route::get('/category/{name}', ['as' => 'category.show', 'uses' => 'CategoryController@show']);

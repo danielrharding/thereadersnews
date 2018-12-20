@@ -154,7 +154,6 @@
             enable_page_level_ads: true
         });
     </script>
-
 </head>
 
 <body class="post-template-default single single-post postid-95 single-format-standard wp-custom-logo">
