@@ -25,7 +25,7 @@ Route::get('/contact', function()
 {
     return View::make('pages.contact');
 });
-Route::get('privacy-policy', function()
+Route::get('/privacy-policy', function()
 {
     return View::make('pages.privacypolicy');
 });

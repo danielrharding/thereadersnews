@@ -77,7 +77,7 @@
     <div class="site-branding container">
         <div class="row">
             <div class="col-md-4 header-logo">
-                <img style="height:40px;" src="{{ asset('/images/logo.png') }}"/>
+                {{--<img style="height:40px;" src="{{ asset('/images/logo.png') }}"/>--}}
                 <a href="https://colorlib.com/newspaper-x/" class="trn-logo" rel="home" itemprop="url">
                     The Readers News
                 </a>

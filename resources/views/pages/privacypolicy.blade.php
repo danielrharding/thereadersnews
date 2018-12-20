@@ -1,9 +1,9 @@
-@extends('layouts.sidebar')
+@extends('layouts.default')
 @section('content')
     <div id="content" class="site-content container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>My privacy policy</h1>
+                <h1>Privacy policy</h1>
                 <p>Your privacy policy should include the following information:</p>
                 <p>Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.
                     Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.
