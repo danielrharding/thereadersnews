@@ -4,7 +4,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <div id="text-2" class="widget widget_text"><h3 class="widget-title">About</h3>			<div class="textwidget"><p>Maecenas finibus pretium congue. Quisque sed sem itum turpis. Mauris ut quam vitae urna dignissim. </p>
+                    <div id="text-2" class="widget widget_text">
+                        <h3 class="widget-title">About</h3>
+                        <div class="textwidget">
+                            <a style="color: #fff;" href="{{ url('/privacy-policy') }}">Privacy Policy</a>
+                            <p>Maecenas finibus pretium congue. Quisque sed sem itum turpis. Mauris ut quam vitae urna dignissim. </p>
 
                             <p>Curabitur pharetra mauris id urna vestibulum, ne pharetra elit commodo. Nunc rutrum mi lectus am utan es nimbus avientin am estas potivan. </p></div>
                     </div>				</div>
