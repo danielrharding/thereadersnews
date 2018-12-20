@@ -26,37 +26,37 @@
             <div id="newspaper_x_header_module-2" class="widget newspaper_x_widgets">
                 <div class="newspaper-x-recent-posts container">
                     <ul>
-                        <li class="blazy b-loaded" id="newspaper-x-recent-post-0" style="background-image: url(<?php echo $feed[0]->urlToImage; ?>); background-size: cover;">
+                        <li class="blazy b-loaded" id="newspaper-x-recent-post-0" style="background-image: url(<?php echo $feed->articles[0]->urlToImage; ?>); background-size: cover;">
                             <div class="newspaper-x-post-info">
                                 <h1>
-                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[0]->title, 5) ?></a>
+                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[0]->title, 5) ?></a>
                                 </h1>
                                 <span class="newspaper-x-category">
                                     <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
-                                <span class="newspaper-x-date"><?php echo article_date($feed[0]->publishedAt); ?></span>
+                                <span class="newspaper-x-date"><?php echo article_date($feed->articles[0]->publishedAt); ?></span>
                             </div>
                         </li>
-                        <li class="blazy b-loaded" id="newspaper-x-recent-post-1" style="background-image: url(<?php echo $feed[1]->urlToImage; ?>); background-size: cover;">
+                        <li class="blazy b-loaded" id="newspaper-x-recent-post-1" style="background-image: url(<?php echo $feed->articles[1]->urlToImage; ?>); background-size: cover;">
                             <div class="newspaper-x-post-info">
                                 <h6>
-                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[1]->title, 8) ?></a>
+                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[1]->title, 8) ?></a>
                                 </h6>
                                 <span class="newspaper-x-category">
                                     <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
-                                <span class="newspaper-x-date"><?php echo article_date($feed[1]->publishedAt); ?></span>
+                                <span class="newspaper-x-date"><?php echo article_date($feed->articles[1]->publishedAt); ?></span>
                             </div>
                         </li>
-                        <li class="blazy b-loaded" id="newspaper-x-recent-post-2" style="background-image: url(<?php echo $feed[2]->urlToImage; ?>); background-size: cover;">
+                        <li class="blazy b-loaded" id="newspaper-x-recent-post-2" style="background-image: url(<?php echo $feed->articles[2]->urlToImage; ?>); background-size: cover;">
                             <div class="newspaper-x-post-info">
                                 <h6>
-                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[2]->title, 8) ?></a>
+                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[2]->title, 8) ?></a>
                                 </h6>
                                 <span class="newspaper-x-category">
                                     <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                 </span>
-                                <span class="newspaper-x-date"><?php echo article_date($feed[2]->publishedAt); ?></span>
+                                <span class="newspaper-x-date"><?php echo article_date($feed->articles[2]->publishedAt); ?></span>
                             </div>
                         </li>
                     </ul>
@@ -72,48 +72,48 @@
                                 <div class="col-md-12">
                                     <div class="newspaper-x-recent-posts newspaper-x-recent-posts-a">
                                         <ul>
-                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed[3]->urlToImage; ?>);">
+                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed->articles[3]->urlToImage; ?>);">
                                                 <div class="newspaper-x-post-info">
                                                     <h6>
-                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[3]->title, 3); ?></a>
+                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[3]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
                                                         <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
-                                                    <span class="newspaper-x-date"><?php echo article_date($feed[3]->publishedAt); ?></span>
+                                                    <span class="newspaper-x-date"><?php echo article_date($feed->articles[3]->publishedAt); ?></span>
                                                 </div>
                                             </li>
-                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed[4]->urlToImage; ?>);">
+                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed->articles[4]->urlToImage; ?>);">
                                                 <div class="newspaper-x-post-info">
                                                     <h6>
-                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[4]->title, 3); ?></a>
+                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[4]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
                                                         <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
-                                                    <span class="newspaper-x-date"><?php echo article_date($feed[4]->publishedAt); ?></span>
+                                                    <span class="newspaper-x-date"><?php echo article_date($feed->articles[4]->publishedAt); ?></span>
                                                 </div>
                                             </li>
-                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed[5]->urlToImage; ?>);">
+                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed->articles[5]->urlToImage; ?>);">
                                                 <div class="newspaper-x-post-info">
                                                     <h6>
-                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[5]->title, 3); ?></a>
+                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[5]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
                                                         <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
-                                                    <span class="newspaper-x-date"><?php echo article_date($feed[5]->publishedAt); ?></span>
+                                                    <span class="newspaper-x-date"><?php echo article_date($feed->articles[5]->publishedAt); ?></span>
                                                 </div>
                                             </li>
-                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed[6]->urlToImage; ?>);">
+                                            <li class="blazy  b-loaded" id="newspaper-x-recent-post-4" style="background-image: url(<?php echo $feed->articles[6]->urlToImage; ?>);">
                                                 <div class="newspaper-x-post-info">
                                                     <h6>
-                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed[6]->title, 3); ?></a>
+                                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($feed->articles[6]->title, 3); ?></a>
                                                     </h6>
                                                     <span class="newspaper-x-category">
                                                         <a href="<?php echo route('category.show', [ 'name' => 'top-headline' ]) ?>">Top Headline</a>
                                                     </span>
-                                                    <span class="newspaper-x-date"><?php echo article_date($feed[6]->publishedAt); ?></span>
+                                                    <span class="newspaper-x-date"><?php echo article_date($feed->articles[6]->publishedAt); ?></span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -138,20 +138,20 @@
                                 <div class="newspaper-x-blog-post-layout-c">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $latest[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $latest->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest[0]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest->articles[0]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest[0]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest->articles[0]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($latest[0]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($latest->articles[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($latest->articles[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,20 +159,20 @@
                                 <div class="newspaper-x-blog-post-layout-c">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $latest[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $latest->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest[1]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest->articles[1]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest[1]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest->articles[1]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($latest[1]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($latest->articles[1]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($latest->articles[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -180,20 +180,20 @@
                                 <div class="newspaper-x-blog-post-layout-c">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $latest[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $latest->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest[2]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($latest->articles[2]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest[2]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $latest->articles[2]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($latest[2]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($latest->articles[2]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($latest->articles[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -211,20 +211,20 @@
                                 <div class="newspaper-x-blog-post-layout-b">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $event[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $event->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[0]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[0]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event[0]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event->articles[0]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($event[0]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($event->articles[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($event->articles[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -232,20 +232,20 @@
                                 <div class="newspaper-x-blog-post-layout-b">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $event[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $event->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[1]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[1]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event[1]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event->articles[1]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($event[0]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($event->articles[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($event->articles[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -253,20 +253,20 @@
                                 <div class="newspaper-x-blog-post-layout-b">
                                     <div class="newspaper-x-image">
                                         <a href="<?php echo url("/article/1/name"); ?>">
-                                            <img width="550" height="360" src="<?php echo $event[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                            <img width="550" height="360" src="<?php echo $event->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                         </a>
                                     </div>
                                     <div class="newspaper-x-title">
                                         <h4>
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[2]->title, 4); ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[2]->title, 4); ?></a>
                                         </h4>
                                     </div>
                                     <span class="newspaper-x-author">
-                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event[2]->author; ?></a>
+                                        <a href="<?php echo url("/article/1/name"); ?>"><?php echo $event->articles[2]->author; ?></a>
                                     </span>
-                                    <span class="newspaper-x-date"><?php echo article_date($event[2]->publishedAt); ?></span>
+                                    <span class="newspaper-x-date"><?php echo article_date($event->articles[2]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                        <?php echo limit_words($event->articles[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -280,16 +280,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[3]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[3]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[3]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[3]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -300,16 +300,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[4]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[4]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[4]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[4]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[4]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[4]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -320,16 +320,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[5]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[5]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[5]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[5]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[5]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[5]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -342,16 +342,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[6]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[6]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[6]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[6]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[6]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[6]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -362,16 +362,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[7]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[7]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[7]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[7]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[7]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[7]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -382,16 +382,16 @@
                                         <div class="col-sm-5 col-xs-12">
                                             <div class="newspaper-x-image">
                                                 <a href="<?php echo url("/article/1/name"); ?>">
-                                                    <img width="550" height="360" src="<?php echo $event[8]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <img width="550" height="360" src="<?php echo $event->articles[8]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                             </div>
                                         </div>
                                         <div class="col-sm-7 col-xs-12">
                                             <div class="newspaper-x-title">
                                                 <h3>
-                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event[8]->title, 4); ?></a>
+                                                    <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($event->articles[8]->title, 4); ?></a>
                                                 </h3>
                                             </div>
-                                            <span class="newspaper-x-date"><?php echo article_date($event[8]->publishedAt); ?></span>
+                                            <span class="newspaper-x-date"><?php echo article_date($event->articles[8]->publishedAt); ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -417,20 +417,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">
-                                                <img width="550" height="360" src="<?php echo $editorial[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $editorial->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial[0]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial->articles[0]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial[0]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial->articles[0]->author; ?></a>
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[0]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            <?php echo limit_words($editorial->articles[0]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -438,20 +438,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $editorial[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $editorial->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial[1]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial->articles[1]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial[1]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial->articles[1]->author; ?></a>
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[1]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            <?php echo limit_words($editorial->articles[1]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -459,20 +459,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $editorial[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $editorial->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial[2]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial->articles[2]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial[2]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial->articles[2]->author; ?></a>
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[2]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            <?php echo limit_words($editorial->articles[2]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -480,20 +480,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $editorial[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $editorial->articles[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial[3]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($editorial->articles[3]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial[3]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $editorial->articles[3]->author; ?></a>
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[3]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            <?php echo limit_words($editorial->articles[3]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -506,20 +506,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $world[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $world->articles[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world[0]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world->articles[0]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world[0]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world->articles[0]->author; ?></a>
                                         </span>
-                                        <span class="newspaper-x-date"><?php echo article_date($world[0]->publishedAt); ?></span>
+                                        <span class="newspaper-x-date"><?php echo article_date($world->articles[0]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                            <?php echo limit_words($world->articles[0]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -527,20 +527,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $world[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $world->articles[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world[1]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world->articles[1]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world[1]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world->articles[1]->author; ?></a>
                                         </span>
-                                        <span class="newspaper-x-date"><?php echo article_date($world[1]->publishedAt); ?></span>
+                                        <span class="newspaper-x-date"><?php echo article_date($world->articles[1]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                            <?php echo limit_words($world->articles[1]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -548,20 +548,20 @@
                                     <div class="newspaper-x-blog-post-layout-b">
                                         <div class="newspaper-x-image">
                                             <a href="<?php echo url("/article/1/name"); ?>">
-                                                <img width="550" height="360" src="<?php echo $world[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                <img width="550" height="360" src="<?php echo $world->articles[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                             </a>
                                         </div>
                                         <div class="newspaper-x-title">
                                             <h4>
-                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world[2]->title, 4); ?></a>
+                                                <a href="<?php echo url("/article/1/name"); ?>"><?php echo limit_words($world->articles[2]->title, 4); ?></a>
                                             </h4>
                                         </div>
                                         <span class="newspaper-x-author">
-                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world[2]->author; ?></a>
+                                            <a href="<?php echo url("/article/1/name"); ?>"><?php echo $world->articles[2]->author; ?></a>
                                         </span>
-                                        <span class="newspaper-x-date"><?php echo article_date($world[2]->publishedAt); ?></span>
+                                        <span class="newspaper-x-date"><?php echo article_date($world->articles[2]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
+                                            <?php echo limit_words($world->articles[2]->description, 20); ?> <a href="<?php echo url("/article/1/name"); ?>">...</a>
                                         </div>
                                     </div>
                                 </div>
