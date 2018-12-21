@@ -22,4 +22,9 @@ class ArticleModel extends Model
         return ArticleService::limitWords($this->content, $limit, $append);
     }
 
+    public function articleDate()
+    {
+        return ArticleService::articleDate($this->publishedAt);
+    }
+
 }
