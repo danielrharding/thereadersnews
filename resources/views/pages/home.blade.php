@@ -152,7 +152,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($latest[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[0]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $latest[0]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $latest[0]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $latest[0]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($latest[1]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[1]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $latest[1]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $latest[1]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $latest[1]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($latest[2]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($latest[2]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $latest[2]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $latest[2]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $latest[2]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($event[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[0]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $event[0]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $event[0]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $event[0]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($event[0]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[1]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $event[1]->id, 'title' => $event[1]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $event[1]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $event[1]->id, 'title' => $event[1]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                                     </span>
                                     <span class="newspaper-x-date"><?php echo article_date($event[2]->publishedAt); ?></span>
                                     <div class="newspaper-x-content">
-                                        <?php echo limit_words($event[2]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $event[2]->id, 'title' => $event[2]->getFriendlyLink() ]) }}">...</a>
+                                        {{ $event[2]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $event[2]->id, 'title' => $event[2]->getFriendlyLink() ]) }}">...</a>
                                     </div>
                                 </div>
                             </div>
@@ -431,7 +431,7 @@
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[0]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            {{ $editorial[0]->shortContent(20) }} <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -452,7 +452,7 @@
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[1]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            {{ $editorial[1]->shortContent(20) }} <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -473,7 +473,7 @@
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[2]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            {{ $editorial[1]->shortContent(20) }} <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -494,7 +494,7 @@
                                         </span>
                                         <span class="newspaper-x-date">May 10, 2017</span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($editorial[3]->description, 20); ?> <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
+                                            {{ $editorial[3]->shortContent(20) }} <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -520,7 +520,7 @@
                                         </span>
                                         <span class="newspaper-x-date"><?php echo article_date($world[0]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[0]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $world[0]->id, 'title' => $world[0]->getFriendlyLink() ]) }}">...</a>
+                                            {{ $world[0]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $world[0]->id, 'title' => $world[0]->getFriendlyLink() ]) }}">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +541,7 @@
                                         </span>
                                         <span class="newspaper-x-date"><?php echo article_date($world[1]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[1]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $world[1]->id, 'title' => $world[1]->getFriendlyLink() ]) }}">...</a>
+                                            {{ $world[1]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $world[1]->id, 'title' => $world[1]->getFriendlyLink() ]) }}">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -562,7 +562,7 @@
                                         </span>
                                         <span class="newspaper-x-date"><?php echo article_date($world[2]->publishedAt); ?></span>
                                         <div class="newspaper-x-content">
-                                            <?php echo limit_words($world[2]->description, 20); ?> <a href="{{ route('article.show', [ 'id' => $world[2]->id, 'title' => $world[2]->getFriendlyLink() ]) }}">...</a>
+                                            {{ $world[2]->shortContent(20) }} <a href="{{ route('article.show', [ 'id' => $world[2]->id, 'title' => $world[2]->getFriendlyLink() ]) }}">...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -576,20 +576,20 @@
                                             <div class="col-sm-4 col-xs-12">
                                                 <div class="newspaper-x-image">
                                                     <a href="{{ route('article.show', [ 'id' => $world[3]->id, 'title' => $world[3]->getFriendlyLink() ]) }}">
-                                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/04_the-world_article_04-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                        <img width="550" height="360" src="{{ $world[3]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-sm-7 col-xs-12 card-info">
                                                 <div class="newspaper-x-title">
                                                     <h4>
-                                                        <a href="{{ route('article.show', [ 'id' => $world[3]->id, 'title' => $world[3]->getFriendlyLink() ]) }}">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                                        <a href="{{ route('article.show', [ 'id' => $world[3]->id, 'title' => $world[3]->getFriendlyLink() ]) }}">{{ $world[3]->title }}</a>
                                                     </h4>
                                                 </div>
                                                 <span class="newspaper-x-author">
-                                                    <a href="{{ route('article.show', [ 'id' => $world[3]->id, 'title' => $world[3]->getFriendlyLink() ]) }}">raibercristian</a>
+                                                    <a href="{{ route('article.show', [ 'id' => $world[3]->id, 'title' => $world[3]->getFriendlyLink() ]) }}">{{ $world[3]->author }}</a>
                                                 </span>
-                                                <span class="newspaper-x-date">May 10, 2017</span>
+                                                <span class="newspaper-x-date">{{ $world[3]->publishedAt }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -599,21 +599,21 @@
                                         <div class="row">
                                             <div class="col-sm-4 col-xs-12">
                                                 <div class="newspaper-x-image">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">
-                                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/04_the-world_article_05-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                    <a href="{{ route('article.show', [ 'id' => $world[4]->id, 'title' => $world[4]->getFriendlyLink() ]) }}">
+                                                        <img width="550" height="360" src="{{ $world[4]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-sm-7 col-xs-12 card-info">
                                                 <div class="newspaper-x-title">
                                                     <h4>
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Nunc dictum condimentum cursus votum es atium</a>
+                                                        <a href="{{ route('article.show', [ 'id' => $world[4]->id, 'title' => $world[4]->getFriendlyLink() ]) }}">{{ $world[4]->title }}</a>
                                                     </h4>
                                                 </div>
                                                 <span class="newspaper-x-author">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">raibercristian</a>
+                                                    <a href="{{ route('article.show', [ 'id' => $world[4]->id, 'title' => $world[4]->getFriendlyLink() ]) }}">{{ $world[4]->author }}</a>
                                                 </span>
-                                                <span class="newspaper-x-date">May 10, 2017</span>
+                                                <span class="newspaper-x-date">{{ $world[4]->publishedAt }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -625,21 +625,21 @@
                                         <div class="row">
                                             <div class="col-sm-4 col-xs-12">
                                                 <div class="newspaper-x-image">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">
-                                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/04_the-world_article_06-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
+                                                    <a href="{{ route('article.show', [ 'id' => $world[5]->id, 'title' => $world[5]->getFriendlyLink() ]) }}">
+                                                        <img width="550" height="360" src="{{ $world[5]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-sm-7 col-xs-12 card-info">
                                                 <div class="newspaper-x-title">
                                                     <h4>
-                                                        <a href="<?php echo url("/article/1/name"); ?>">Maecenas tincidunt posuere quam, eu consectetur justo</a>
+                                                        <a href="{{ route('article.show', [ 'id' => $world[5]->id, 'title' => $world[5]->getFriendlyLink() ]) }}">{{ $world[5]->title }}</a>
                                                     </h4>
                                                 </div>
                                                 <span class="newspaper-x-author">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">raibercristian</a>
+                                                    <a href="{{ route('article.show', [ 'id' => $world[5]->id, 'title' => $world[5]->getFriendlyLink() ]) }}">{{ $world[5]->author }}</a>
                                                 </span>
-                                                <span class="newspaper-x-date">May 10, 2017</span>
+                                                <span class="newspaper-x-date">{{ $world[5]->publishedAt }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -649,20 +649,20 @@
                                         <div class="row">
                                             <div class="col-sm-4 col-xs-12">
                                                 <div class="newspaper-x-image">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">
-                                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/04_the-world_article_07-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
+                                                    <a href="{{ route('article.show', [ 'id' => $world[6]->id, 'title' => $world[6]->getFriendlyLink() ]) }}">
+                                                        <img width="550" height="360" src="{{ $world[6]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="">                    </a>
                                                 </div>
                                             </div>
                                             <div class="col-sm-7 col-xs-12 card-info">
                                                 <div class="newspaper-x-title">
                                                     <h4>
-                                                        <a href="<?php echo url("/article/1/name"); ?>">In odio sapien, accumsan ut dolor vel istum…</a>
+                                                        <a href="{{ route('article.show', [ 'id' => $world[6]->id, 'title' => $world[6]->getFriendlyLink() ]) }}">{{ $world[6]->title }}</a>
                                                     </h4>
                                                 </div>
                                                 <span class="newspaper-x-author">
-                                                    <a href="<?php echo url("/article/1/name"); ?>">raibercristian</a>
+                                                    <a href="{{ route('article.show', [ 'id' => $world[6]->id, 'title' => $world[6]->getFriendlyLink() ]) }}">{{ $world[6]->author }}</a>
                                                 </span>
-                                                <span class="newspaper-x-date">May 10, 2017</span>
+                                                <span class="newspaper-x-date">{{ $world[6]->publishedAt }}</span>
                                             </div>
                                         </div>
                                     </div>
