@@ -50,6 +50,7 @@ class ArticleController extends Controller
 
         return view('pages.article', [
             'article' => $articleModel,
+            'related' => ArticleModel::where('category', '=', $articleModel->category)->orderByDesc('id')->get(),
         ]);
     }
 

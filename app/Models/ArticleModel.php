@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Services\SanitizeUrl;
 
 class ArticleModel extends Model
 {
@@ -12,6 +13,6 @@ class ArticleModel extends Model
 
     public function getFriendlyLink()
     {
-        return str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($this->title)))));
+        return SanitizeUrl::slug($this->title);
     }
 }
