@@ -1,26 +1,6 @@
 @extends('layouts.default')
 @section('content')
-    <?php
-    function limit_words($words, $limit, $append = '') {
-        // Add 1 to the specified limit becuase arrays start at 0
-        $limit = $limit+1;
-        // Store each individual word as an array element
-        // Up to the limit
-        $words = explode(' ', $words, $limit);
-        // Shorten the array by 1 because that final element will be the sum of all the words after the limit
-        array_pop($words);
-        // Implode the array for output, and append an ellipse
-        $words = implode(' ', $words) . $append;
-        // Return the result
-        return $words;
-    }
 
-    function article_date($articleDate) {
-        $date = date_create($articleDate);
-        return date_format($date,"M d, Y");
-    }
-
-    ?>
     <div id="content" class="site-content container">
         <div class="row">
             <header class="col-xs-12">
@@ -38,7 +18,7 @@
                                     <a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark">
                                         <img width="550" height="360" src="<?php echo $feed[0]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
-                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[0]->title, 5) ?></a></h4>
+                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[0]->shortContent(5) }}</a></h4>
                                 <div class="newspaper-x-post-meta">
                                     <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[0]->articleDate() }} </span></div>
                                 </div>
@@ -62,7 +42,7 @@
                                     <a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark">
                                         <img width="550" height="360" src="<?php echo $feed[1]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                 </div>
-                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[1]->title, 5) ?></a></h4>
+                                <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[1]->shortContent(5) }}</a></h4>
                                 <div class="newspaper-x-post-meta">
                                     <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[1]->articleDate() }} </span></div>
                                 </div>
@@ -99,7 +79,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[2]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[2]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[2]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[2]->articleDate() }} </span></div>
                                     </div>
@@ -123,7 +103,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[3]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[3]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[3]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[3]->articleDate() }} </span></div>
                                     </div>
@@ -149,7 +129,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="{{ $feed[4]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[4]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[4]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[4]->articleDate() }} </span></div>
                                     </div>
@@ -173,7 +153,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[5]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[5]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[5]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[5]->articleDate() }} </span></div>
                                     </div>
@@ -199,7 +179,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[6]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[6]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[6]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[6]->articleDate() }} </span></div>
                                     </div>
@@ -223,7 +203,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[7]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[7]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[7]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[7]->articleDate() }} </span></div>
                                     </div>
@@ -243,7 +223,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 newspaper-x-image-banner">
-                            <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => str_replace('.', '', str_replace('%', '', preg_replace('/[0-9]+/', '', strtolower(urlencode($feed[8]->title))))) ]) }}">
+                            <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}">
                                 <img width="729" height="90" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/banner.png" class="attachment-newspaper-x-wide-banner size-newspaper-x-wide-banner" alt="">    </a>
                         </div>
                         <div class="col-md-6">
@@ -253,7 +233,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[8]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[8]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[8]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[8]->articleDate() }} </span></div>
                                     </div>
@@ -277,7 +257,7 @@
                                         <a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark">
                                             <img width="550" height="360" src="<?php echo $feed[9]->urlToImage; ?>" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                     </div>
-                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[9]->title, 4) ?></a></h4>
+                                    <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark">{{ $feed[9]->shortContent(5) }}</a></h4>
                                     <div class="newspaper-x-post-meta">
                                         <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[9]->articleDate() }} </span></div>
                                     </div>
