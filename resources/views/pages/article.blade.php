@@ -51,101 +51,94 @@
                             </div><!--/.row-->
                             <div class="owlCarousel owl-carousel owl-theme" data-slider-id="95" id="owlCarousel-95" data-slider-items="3" data-slider-speed="400" data-slider-auto-play="1" data-slider-navigation="false">
                                 <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    <a href="{{ route('article.show', [ 'id' => $related[0]->id, 'title' => $related[0]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[0]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
                                     </a>
                                     <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/">Sed purus velit, finibus non&hellip;</a>
-                                    </div><div class="newspaper-x-related-posts-date">{{ $article->publishedAt }}</div>
+                                        <a href="{{ route('article.show', [ 'id' => $related[0]->id, 'title' => $related[0]->getFriendlyLink() ]) }}">{{ $related[0]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[0]->articleDate() }}</div>
                                 </div><!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/nunc-hendrerit-egestas-amus-ad-arcu-im-usa/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/nunc-hendrerit-egestas-amus-ad-arcu-im-usa/">Nunc hendrerit egestas amus ad&hellip;</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div><!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_slider_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/">Itum as binus sitam conestum&hellip;</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div><!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/">Vivamus id lorem blandit</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/">Nulla nec enimus amis</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/00_header_under_article_04-1-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/">Aliquet, lorem pantum.</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/02_events_article_06-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/">In odio sapien, at uta,&hellip;</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/03_editorial_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/">Maecenas tincidunt posuere quam, eu&hellip;</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
-                                <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/03_editorial_article_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/">Maecenas elit ligula, placerat elementum</a>
 
-</div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
-                                <!--/.item-->
                                 <div class="item">
-                                    <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">
-                                        <img width="550" height="360" src="https://colorlib.com/newspaper-x/wp-content/uploads/sites/15/2017/05/03_editorial_article_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    <a href="{{ route('article.show', [ 'id' => $related[1]->id, 'title' => $related[1]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[1]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
                                     </a>
                                     <div class="newspaper-x-related-post-title">
-                                        <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">Maecenas tincidunt posuere quam, eu&hellip;</a>
-                                    </div>
-                                    <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                </div>
+                                        <a href="{{ route('article.show', [ 'id' => $related[1]->id, 'title' => $related[1]->getFriendlyLink() ]) }}">{{ $related[1]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[1]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[2]->id, 'title' => $related[2]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[2]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[2]->id, 'title' => $related[2]->getFriendlyLink() ]) }}">{{ $related[2]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[2]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[3]->id, 'title' => $related[3]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[3]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[3]->id, 'title' => $related[3]->getFriendlyLink() ]) }}">{{ $related[3]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[3]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[4]->id, 'title' => $related[4]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[4]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[4]->id, 'title' => $related[3]->getFriendlyLink() ]) }}">{{ $related[4]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[4]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[5]->id, 'title' => $related[5]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[5]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[5]->id, 'title' => $related[5]->getFriendlyLink() ]) }}">{{ $related[5]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[5]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[6]->id, 'title' => $related[6]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[6]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[6]->id, 'title' => $related[6]->getFriendlyLink() ]) }}">{{ $related[6]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[6]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[7]->id, 'title' => $related[7]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[7]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[7]->id, 'title' => $related[7]->getFriendlyLink() ]) }}">{{ $related[7]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[7]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[8]->id, 'title' => $related[8]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[8]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[8]->id, 'title' => $related[8]->getFriendlyLink() ]) }}">{{ $related[8]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[8]->articleDate() }}</div>
+                                </div><!--/.item-->
+
+                                <div class="item">
+                                    <a href="{{ route('article.show', [ 'id' => $related[9]->id, 'title' => $related[9]->getFriendlyLink() ]) }}">
+                                        <img width="550" height="360" src="{{ $related[9]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
+                                    </a>
+                                    <div class="newspaper-x-related-post-title">
+                                        <a href="{{ route('article.show', [ 'id' => $related[9]->id, 'title' => $related[9]->getFriendlyLink() ]) }}">{{ $related[9]->title }}</a>
+                                    </div><div class="newspaper-x-related-posts-date">{{ $related[9]->articleDate() }}</div>
+                                </div><!--/.item-->
                                 <!--/.item-->
                             </div>
                             <!--/.owlCarousel-->
