@@ -40,7 +40,7 @@
                                 </div>
                                 <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[0]->id, 'title' => $feed[0]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[0]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
-                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[0]->articleDate() }} </span></div>
                                 </div>
                                 <!-- .entry-meta -->
                             </header>
@@ -64,7 +64,7 @@
                                 </div>
                                 <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[1]->id, 'title' => $feed[1]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[1]->title, 5) ?></a></h4>
                                 <div class="newspaper-x-post-meta">
-                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                    <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[1]->articleDate() }} </span></div>
                                 </div>
                                 <!-- .entry-meta -->
                             </header>
@@ -101,7 +101,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[2]->id, 'title' => $feed[2]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[2]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[2]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -125,7 +125,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[3]->id, 'title' => $feed[3]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[3]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[3]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -151,7 +151,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[4]->id, 'title' => $feed[4]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[4]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[4]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -175,7 +175,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[5]->id, 'title' => $feed[5]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[5]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[5]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -201,7 +201,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[6]->id, 'title' => $feed[6]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[6]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[6]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -225,7 +225,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[7]->id, 'title' => $feed[7]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[7]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[7]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -255,7 +255,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[8]->id, 'title' => $feed[8]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[8]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[8]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
@@ -279,7 +279,7 @@
                                     </div>
                                     <h4 class="entry-title"><a href="{{ route('article.show', [ 'id' => $feed[9]->id, 'title' => $feed[9]->getFriendlyLink()]) }}" rel="bookmark"><?php echo limit_words($feed[9]->title, 4) ?></a></h4>
                                     <div class="newspaper-x-post-meta">
-                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">May 10, 2017 </span></div>
+                                        <div><span class="newspaper-x-category"> <a href="<?php echo route('category.show', [ 'name' => $name ]) ?>"><?php echo $name; ?></a></span><span class="newspaper-x-date">{{ $feed[9]->articleDate() }} </span></div>
                                     </div>
                                     <!-- .entry-meta -->
                                 </header>
