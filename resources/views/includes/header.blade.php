@@ -77,10 +77,14 @@
     <div class="site-branding container">
         <div class="row">
             <div class="col-md-4 header-logo">
-                {{--<img style="height:40px;" src="{{ asset('/images/logo.png') }}"/>--}}
-                <a href="https://colorlib.com/newspaper-x/" class="trn-logo" rel="home" itemprop="url" style="font-size: 18px;">
-                    The Readers News
-                </a>
+                <div style="height: 40px; float: left; margin-top: 25px;">
+                    <img style="height: 40px;" src="{{ asset('/images/logo.png') }}"/>
+                </div>
+                <div style="height: 40px; float: left; margin-top: 25px;">
+                    <a href="{{ url('/') }}" class="trn-logo" rel="home" itemprop="url" style="font-size: 18px; padding: 0px; margin: 0px; line-height: 40px; margin-left: 15px;">
+                        The Readers News
+                    </a>
+                </div>
             </div>
             <div class="col-md-8 header-banner">
                 <a href="https://colorlib.com/wp/forums/">

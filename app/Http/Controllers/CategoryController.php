@@ -47,7 +47,7 @@ class CategoryController extends Controller
      */
     public function show($name = null)
     {
-        $articleModel = ArticleModel::where('category', '=', $name)->orderByDesc('publishedAt')->get();
+        $articleModel = ArticleModel::where('category', '=', $name)->orderByDesc('id')->get();
 
         return view('pages.category', [
             'name' => str_replace("+","", $name),

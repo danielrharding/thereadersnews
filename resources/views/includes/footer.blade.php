@@ -45,8 +45,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div id="newspaper_x_widget_contact_us-2" class="newspaper-x-type-contact widget newspaper_x_widgets"><h3 class="widget-title">Contact</h3>
                         <div class="textwidget contact-widget">
-                            <div><span>Phone:</span> <a href="tel:07857186951">07857186951</a></div>
-                            <div><span>Email:</span> <a href="/cdn-cgi/l/email-protection#f9979c8e8a8998899c8b81b99a96978d989a8dd79a9694"><span class="__cf_email__" data-cfemail="731d16040003120316010b33101c1d071210075d101c1e">wearecavelio@gmail.com</span></a></div>
+                            <div><span>Email:</span> <a href="/cdn-cgi/l/email-protection#f9979c8e8a8998899c8b81b99a96978d989a8dd79a9694"><span class="__cf_email__" data-cfemail="731d16040003120316010b33101c1d071210075d101c1e">marketing@thereadersnew.com</span></a></div>
                             <div><span>Address:</span>Maidstone Road, TN12 6AE</div>
                             <div class="author-social-menu"><ul id="social-contact" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111"><a href="https://facebook.com"><span>Facebook</span></a></li>
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113"><a href="https://twitter.com"><span>Twitter</span></a></li>
