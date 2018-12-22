@@ -18,11 +18,11 @@ class HomeController extends Controller
         $feed = new ArticleService();
 
         return view('pages.home', [
-            'feed' => ArticleModel::where('category', '=', 'uk')->orderByDesc('publishedAt')->get(),
-            'editorial' => ArticleModel::where('category', '=', 'editorial')->orderByDesc('publishedAt')->get(),
-            'event' => ArticleModel::where('category', '=', 'event')->orderByDesc('publishedAt')->get(),
-            'latest' => ArticleModel::where('category', '=', 'latest')->orderByDesc('publishedAt')->get(),
-            'world' => ArticleModel::where('category', '=', 'world')->orderByDesc('publishedAt')->get(),
+            'feed' => ArticleModel::where('category', '=', 'uk')->orderByDesc('publishedAt')->distinct('title')->get(),
+            'editorial' => ArticleModel::where('category', '=', 'editorial')->orderByDesc('publishedAt')->distinct('title')->get(),
+            'event' => ArticleModel::where('category', '=', 'event')->orderByDesc('publishedAt')->distinct('title')->get(),
+            'latest' => ArticleModel::where('category', '=', 'latest')->orderByDesc('publishedAt')->distinct('title')->get(),
+            'world' => ArticleModel::where('category', '=', 'world')->orderByDesc('publishedAt')->distinct('title')->get(),
         ]);
     }
 
