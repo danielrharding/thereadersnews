@@ -23,7 +23,7 @@ class SanitizeUrl
         $string = preg_replace("/[^a-zA-Z0-9 \-]/", "", $string);
         $string = trim(preg_replace("/\\s+/", " ", $string));
         $string = strtolower($string);
-        $string = str_replace(" ", $space, $string);
+        $string = str_replace('--','', str_replace(" ", $space, $string));
 
         return $string;
 

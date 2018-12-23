@@ -61,6 +61,10 @@ class ArticleFeedCommand extends Command
 
             foreach ($articles->articles as $article) {
 
+                if(ArticleModel::where('url', '=', $article->url)->count() > 0) {
+                    continue;
+                }
+
                 $articleModel = new ArticleModel();
 
                 if($article->content == null) {
@@ -70,10 +74,12 @@ class ArticleFeedCommand extends Command
 
                 $articleModel->title = $article->title;
                 $articleModel->category = ( isset($category) ) ? $category : "";
-                $articleModel->content = $article->content;
+                $articleModel->content = $this->getSource($article->content, $article->source->name, $article->url);
+                $articleModel->category = $category;
+                $articleModel->source = $article->source->name;
                 $articleModel->author = ( $article->author ) ? $article->author : '';
                 $articleModel->url = $article->url;
-                $articleModel->urlToImage = $article->urlToImage;
+                $articleModel->urlToImage = ( isset($article->urlToImage) ) ? $article->urlToImage : '';
                 $articleModel->publishedAt = $this->articleDate($article->publishedAt);
 
                 $articleModel->save();
@@ -87,4 +93,44 @@ class ArticleFeedCommand extends Command
 
         return date_format($date,"Y-m-d");
     }
+
+    public function getSource($content, $source, $url)
+    {
+        $data = [
+            'Charlotteobserver.com' => '.dateline-storybody',
+            'Independent.ie' => '#js-article-text',
+            'Daily Mail' => '#js-article-text',
+            'Stuff.co.nz' => '.sics-component__story',
+            'Skift.com' => '.post-copy',
+            'Thehollywoodgossip.com' => '.body',
+            'Indiewire.com' => '.entry-content',
+//            'Seekingalpha.com' => '.body',
+//            'The Hindu' => '.body',
+//            'Nj.com' => '.body',
+//            'Charlotteobserver.com' => '.body',
+//            'Pointswithacrew.com' => '.body',
+//            'Indianexpress.com' => '.body',
+//            '' => '.body',
+//            '' => '.body',
+//            '' => '.body',
+//            '' => '.body',
+        ];
+
+        if(isset($data[$source])) {
+            var_dump($source, isset($data[$source]), $url);
+
+            $crawler = \Goutte::request('GET', $url);
+
+            $text = $crawler->filter($data[$source])->each(function ($node) {
+
+                return preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", (string) $node->text());
+
+            });
+
+            return "<p>" . implode('</p><p>', $text) . "</p>";
+        } else {
+            return $content;
+        }
+    }
+
 }

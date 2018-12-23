@@ -1,7 +1,6 @@
 @extends('layouts.default')
 @section('content')
     <div id="content" class="site-content container">
-
         <div class="row">
             <div id="primary" class="content-area col-md-8 col-sm-8 col-xs-12 newspaper-x-sidebar">
                 <main id="main" class="site-main" role="main">
@@ -16,11 +15,11 @@
                             <div class="newspaper-x-image">
                                 <img width="700" height="490" src="{{ $article->urlToImage }}" class="attachment-newspaper-x-single-post size-newspaper-x-single-post wp-post-image" alt="" />        </div>
                             <div class="newspaper-x-post-meta">
-                                <div><span class="newspaper-x-category"> <a href="https://colorlib.com/newspaper-x/category/editorial/">{{ ucwords($article->category) }}</a></span><span class="newspaper-x-date">May 10, 2017 </span></div>            </div><!-- .entry-meta -->
-                            <h2 class="entry-title">{{ $article->title }}</h2>
+                                <div><span class="newspaper-x-category"> <a href="https://colorlib.com/newspaper-x/category/editorial/">{{ ucwords($article->category) }}</a></span><span class="newspaper-x-date">{{ $article->articleDate() }}</span></div>            </div><!-- .entry-meta -->
+                            <h2 class="entry-title"><?php echo $article->title ?></h2>
                         </header><!-- .entry-header -->
                         {{--<blockquote><p>“Etiam nec libero volutpat nisi pellentesque iaculis lobortis ac dui. Duis porta justo metus, eleifend vulputate ipsum volutpat vel.”</p></blockquote>--}}
-                        <div class="entry-content">{{ $article->content }}</div><!-- .entry-content -->
+                        <div class="entry-content"><?php echo str_replace('”', '"</p></blockquote><p>', str_replace('“', '</p><blockquote><p>"', $article->content)) ?></div><!-- .entry-content -->
                         <footer class="entry-footer">
                             <!-- Author description -->
                             <div class="row author-description">
@@ -31,7 +30,7 @@
                                 <div class="description">
                                     <h6><a href="https://colorlib.com/newspaper-x/author/raibercristian/" title="Posts by {{ $article->author }}" rel="author">{{ $article->author }}</a></h6>
                                     <!-- Short Description -->
-                                    <p>{{ $article->content }}</p>
+                                    <p><?php echo $article->shortContent(50) ?></p>
                                 </div>
                                 <div class="social-list"><ul><li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li><li><li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li></ul></div><!-- end .author-bio-social -->    </div>
                             <!-- .Author description -->
@@ -129,15 +128,6 @@
                                     <div class="newspaper-x-related-post-title">
                                         <a href="{{ route('article.show', [ 'id' => $related[8]->id, 'title' => $related[8]->getFriendlyLink() ]) }}">{{ $related[8]->title }}</a>
                                     </div><div class="newspaper-x-related-posts-date">{{ $related[8]->articleDate() }}</div>
-                                </div><!--/.item-->
-
-                                <div class="item">
-                                    <a href="{{ route('article.show', [ 'id' => $related[9]->id, 'title' => $related[9]->getFriendlyLink() ]) }}">
-                                        <img width="550" height="360" src="{{ $related[9]->urlToImage }}" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt="" />
-                                    </a>
-                                    <div class="newspaper-x-related-post-title">
-                                        <a href="{{ route('article.show', [ 'id' => $related[9]->id, 'title' => $related[9]->getFriendlyLink() ]) }}">{{ $related[9]->title }}</a>
-                                    </div><div class="newspaper-x-related-posts-date">{{ $related[9]->articleDate() }}</div>
                                 </div><!--/.item-->
                                 <!--/.item-->
                             </div>

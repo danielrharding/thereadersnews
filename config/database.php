@@ -52,7 +52,7 @@ return [
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
-            'strict' => true,
+            'strict' => false,
             'engine' => null,
         ],
 
@@ -65,6 +65,7 @@ return [
             'password' => env('DB_PASSWORD', 'brinhf9R'),
             'charset' => 'utf8',
             'prefix' => '',
+            'strict' => false,
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
@@ -78,6 +79,7 @@ return [
             'password' => env('DB_PASSWORD', 'secret'),
             'charset' => 'utf8',
             'prefix' => '',
+            'strict' => false,
         ],
 
     ],

@@ -24,7 +24,7 @@ class ArticleService
         // Implode the array for output, and append an ellipse
         $words = implode(' ', $words) . $append;
         // Return the result
-        return $words;
+        return strip_tags($words);
 
     }
 
@@ -38,7 +38,7 @@ class ArticleService
 
     public function getAllFeed($name = null)
     {
-        $ch = curl_init( "https://newsapi.org/v2/everything?q=$name&apiKey=8a78294929be47c4a66b84f4e99ad74c" );
+        $ch = curl_init( "https://newsapi.org/v2/everything?q=$name&from=2018-12-23&sortBy=publishedAt&apiKey=8a78294929be47c4a66b84f4e99ad74c" );
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
         $result = curl_exec($ch);

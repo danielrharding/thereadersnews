@@ -290,16 +290,7 @@
                 <div class="newspaper-x-blog-sidebar">
                     <div id="tag_cloud-2" class="widget widget_tag_cloud">
                         <h3>Tags</h3>
-                        <div class="tagcloud">
-                            <?php
-                                $tags = keywords($feed[0]->content . '' . $feed[1]->content . '' . $feed[2]->content . '' . $feed[3]->content . '' . $feed[4]->content . '' . $feed[5]->content . '' . $feed[6]->content . '' . $feed[7]->content . '' . $feed[8]->content . '' . $feed[9]->content);
-                                $tags = json_decode($tags);
 
-                            ?>
-                            <?php foreach($tags->keywords as $tag) {  ?>
-                                <a href="{{ route('tag.show', [ 'name' => strtolower(urlencode($tag->keyword)) ]) }}" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 8pt;" aria-label="business (2 items)">{{ strtolower($tag->keyword) }}</a>
-                            <?php } ?>
-                        </div>
                     </div>
                 </div>
             </aside>
