@@ -61,6 +61,10 @@ class ArticleFeedCommand extends Command
 
             foreach ($articles->articles as $article) {
 
+                if($article->source->name === 'Google News') {
+                    continue;
+                }
+
                 if(ArticleModel::where('url', '=', $article->url)->count() > 0) {
                     continue;
                 }
@@ -97,6 +101,7 @@ class ArticleFeedCommand extends Command
     public function getSource($content, $source, $url)
     {
         $data = [
+            'ABC News' => '.article-copy',
             'Charlotteobserver.com' => '.dateline-storybody',
             'Independent.ie' => '#js-article-text',
             'Daily Mail' => '#js-article-text',
